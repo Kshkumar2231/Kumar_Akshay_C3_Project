@@ -28,7 +28,15 @@ class RestaurantTest {
         assertTrue(result);
 
     }
-    
+    @Test
+    public void is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time(){
+        //WRITE UNIT TEST CASE HERE
+        addRestaurantDetails();
+        boolean result = restaurant.isRestaurantOpen();
+
+        assertFalse(result);
+
+    }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
